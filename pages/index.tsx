@@ -14,7 +14,10 @@ const Home: NextPage = () => {
         <Header />
       </header>
       <main className="flex flex-col justify-center items-center min-h-screen relative w-full z-10 text-center">
-        <h1 className="text-9xl font-semibold m-5">Frontend developer</h1>
+        <h1 className="text-9xl font-semibold m-5">
+          Frontend{" "}
+          <span className={`${false && "animate-test"}`}>developer</span>
+        </h1>
         <h2 className="text-6xl font-semibold">Linus Foxell</h2>
         <p className="text-4xl mb-20">Student @ Changemaker Education</p>
         <div></div>
