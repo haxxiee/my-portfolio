@@ -4,7 +4,7 @@ import Header from "../components/Header";
 
 const Home: NextPage = () => {
   return (
-    <div className="max-w-7xl m-auto text-black relative min-h-full">
+    <div className="max-w-7xl m-auto text-gray-800 relative min-h-full">
       <Head>
         <title>Linus Portfolio</title>
         <meta name="description" content="Protfolio by Linus Foxell" />
@@ -13,10 +13,10 @@ const Home: NextPage = () => {
       <header>
         <Header />
       </header>
-      <main className="flex flex-col justify-center items-center min-h-screen relative w-full z-10">
-        <h1 className="text-8xl font-semibold m-5">Frontend developer</h1>
-        <h2 className="text-5xl font-semibold">Linus Foxell</h2>
-        <p className="text-3xl mb-20">Student @ Changemaker Education</p>
+      <main className="flex flex-col justify-center items-center min-h-screen relative w-full z-10 text-center">
+        <h1 className="text-9xl font-semibold m-5">Frontend developer</h1>
+        <h2 className="text-6xl font-semibold">Linus Foxell</h2>
+        <p className="text-4xl mb-20">Student @ Changemaker Education</p>
         <div></div>
         <button className="flex flex-col justify-center items-center absolute bottom-5 text-xl font-semibold">
           Projects
