@@ -18,7 +18,7 @@ const Home: NextPage = () => {
   }
   return (
     <div>
-      <div className="max-w-7xl m-auto text-gray-800 dark:text-gray-200 relative min-h-full transition-all">
+      <div className="max-w-7xl m-auto text-gray-800 dark:text-gray-200 relative min-h-full overflow-hidden transition-all">
         <Head>
           <title>Linus Portfolio</title>
           <meta name="description" content="Protfolio by Linus Foxell" />
@@ -101,7 +101,7 @@ const Home: NextPage = () => {
         >
           <motion.div
             className="w-1/2 pl-4"
-            initial={{ opacity: 0, x: -50 }}
+            initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{
@@ -133,22 +133,24 @@ const Home: NextPage = () => {
               <div>GITHUB</div>
             </div>
           </motion.div>
-          <motion.div
-            className="w-1/2"
-            initial={{ opacity: 0, x: 50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.4, type: "spring", stiffness: 100 }}
-          >
-            <Image
-              src={"/assets/invgitPic.png"}
-              alt="hello"
-              layout="responsive"
-              width={1008}
-              height={591}
-              priority={true}
-            />
-          </motion.div>
+          <div className="w-1/2">
+            <motion.div
+              className=""
+              initial={{ opacity: 0, x: 90 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.4, type: "spring", stiffness: 100 }}
+            >
+              <Image
+                src={"/assets/invgitPic.png"}
+                alt="hello"
+                layout="responsive"
+                width={1008}
+                height={591}
+                priority={true}
+              />
+            </motion.div>
+          </div>
         </section>
         <section className="min-h-screen flex justify-center items-center">
           <div className="w-1/2 pl-4">
