@@ -3,11 +3,18 @@ import Head from "next/head";
 import { useTheme } from "next-themes";
 
 import Header from "../components/Header";
+import Image from "next/image";
+import { useEffect, useState } from "react";
 
 const Home: NextPage = () => {
+  const [mounted, setMounted] = useState(false);
   const { theme, setTheme } = useTheme();
+  useEffect(() => setMounted(true), []);
+  if (!mounted) {
+    return null!;
+  }
   return (
-    <div className="max-w-7xl m-auto text-gray-800 dark:text-gray-200 relative min-h-full">
+    <div className="max-w-7xl m-auto text-gray-800 dark:text-gray-200 relative min-h-full transition-all">
       <Head>
         <title>Linus Portfolio</title>
         <meta name="description" content="Protfolio by Linus Foxell" />
@@ -46,18 +53,80 @@ const Home: NextPage = () => {
           </svg>
         </button>
       </main>
-      {theme === "light" ? (
-        <>
-          <div className="absolute top-64 left-8 w-96 h-96 bg-purple-300 rounded-full mix-blend-multiply filter blur-xl animate-blob opacity-70 animate-test2" />
-          <div className="absolute top-64 left-80 w-96 h-96 bg-yellow-300 rounded-full mix-blend-multiply filter blur-xl animate-blob animation-delay-2000 opacity-70" />
-          <div className="absolute top-80 left-40 w-96 h-96 bg-pink-300 rounded-full mix-blend-multiply filter blur-xl animate-blob animation-delay-4000 opacity-70" />
-        </>
-      ) : (
-        ""
-      )}
+      <div
+        className={`absolute top-64 left-8 w-96 h-96 bg-purple-300 rounded-full mix-blend-multiply filter blur-xl animate-blob opacity-70 animate-test2 ${
+          theme === "dark" && "opacity-0"
+        }`}
+      />
+      <div
+        className={`absolute top-64 left-80 w-96 h-96 bg-yellow-300 rounded-full mix-blend-multiply filter blur-xl animate-blob animation-delay-2000 opacity-70 ${
+          theme === "dark" && "opacity-0"
+        }`}
+      />
+      <div
+        className={`absolute top-96 left-40 w-96 h-96 bg-pink-300 rounded-full mix-blend-multiply filter blur-xl animate-blob animation-delay-4000 opacity-70 ${
+          theme === "dark" && "opacity-0"
+        }`}
+      />
 
-      <section className="min-h-screen"></section>
-      <section className="min-h-screen"></section>
+      <section className="min-h-screen flex justify-center items-center">
+        <div className="w-1/2 pl-4">
+          <h1 className="text-4xl font-bold">InvenireGit</h1>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam,
+            possimus? Voluptas maiores sit iure. Laborum incidunt quia deleniti
+            minima iure ipsa facere provident labore numquam? Quae atque qui
+            veritatis minus?
+          </p>
+          <div>
+            <span>[TAG]</span>
+            <span>[TAG]</span>
+            <span>[TAG]</span>
+            <span>[TAG]</span>
+            <span>[TAG]</span>
+          </div>
+          <div className="flex">
+            <h2>LIVE</h2>
+            <div>GITHUB</div>
+          </div>
+        </div>
+        <div className="w-1/2">
+          <Image
+            src={"/assets/invgitPic.png"}
+            alt="hello"
+            layout="responsive"
+            width={1008}
+            height={591}
+          />
+        </div>
+      </section>
+      <section className="min-h-screen flex justify-center items-center">
+        <div className="w-1/2 pl-4">
+          <h1 className="text-4xl font-bold">TICKSTEM</h1>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam,
+            possimus? Voluptas maiores sit iure. Laborum incidunt quia deleniti
+            minima iure ipsa facere provident labore numquam? Quae atque qui
+            veritatis minus?
+          </p>
+          <div>
+            <span>[TAG]</span>
+            <span>[TAG]</span>
+            <span>[TAG]</span>
+            <span>[TAG]</span>
+            <span>[TAG]</span>
+          </div>
+        </div>
+        <div className="w-1/2">
+          <Image
+            src={"/assets/tickstemPic.png"}
+            alt="hello"
+            layout="responsive"
+            width={1008}
+            height={591}
+          />
+        </div>
+      </section>
     </div>
   );
 };
