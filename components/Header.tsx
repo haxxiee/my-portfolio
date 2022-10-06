@@ -2,6 +2,7 @@ import { FC } from "react";
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { useTheme } from "next-themes";
+import { motion } from "framer-motion";
 
 const Header: FC = () => {
   const [mounted, setMounted] = useState(false);
@@ -14,7 +15,12 @@ const Header: FC = () => {
   return (
     <div className="absolute w-full flex justify-between items-center text-gray-800 dark:text-gray-200 py-5 z-20">
       <h1 className="text-4xl font-bold ml-4">
-        LF<span className="text-blue-500">.</span>
+        LF
+        <span
+          className={`${theme === "dark" ? "animate-test" : "text-blue-500"}`}
+        >
+          .
+        </span>
       </h1>
       <div className="flex justify-center items-center">
         <h3 className="mx-3 font-bold">about</h3>
@@ -42,7 +48,7 @@ const Header: FC = () => {
           </svg>
         </a>
         {theme === "light" ? (
-          <button
+          <motion.button
             className="mx-3 w-6"
             onClick={() => setTheme(theme === "light" ? "dark" : "light")}
           >
@@ -59,7 +65,7 @@ const Header: FC = () => {
                 fill="currentColor"
               />
             </svg>
-          </button>
+          </motion.button>
         ) : (
           <button
             className="mx-3 w-6"
