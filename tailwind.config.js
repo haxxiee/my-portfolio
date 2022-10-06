@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  darkMode: "class",
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
@@ -9,6 +10,7 @@ module.exports = {
       animation: {
         blob: "blob 12s infinite",
         test: "rainbow 10s ease 0s infinite alternate none running",
+        test2: "rainbowBg 15s ease 0s infinite alternate none running",
       },
       keyframes: {
         blob: {
@@ -40,6 +42,23 @@ module.exports = {
           },
           "100%": {
             color: "rgb(0, 153, 255)",
+          },
+        },
+        rainbowBg: {
+          "0%": {
+            backgroundColor: "rgb(240, 77, 255)",
+          },
+          "25%": {
+            backgroundColor: "rgb(255, 77, 77)",
+          },
+          "50%": {
+            backgroundColor: "rgb(255, 197, 77)",
+          },
+          "75%": {
+            backgroundColor: "rgb(106, 237, 118)",
+          },
+          "100%": {
+            backgroundColor: "rgb(0, 153, 255)",
           },
         },
       },

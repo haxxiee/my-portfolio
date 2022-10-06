@@ -15,5 +15,10 @@
 
 html {
   @apply bg-gray-50;
+  /* @apply bg-black; */
   font-family: "Dosis", sans-serif;
+}
+
+.dark {
+  @apply bg-gray-900;
 }
