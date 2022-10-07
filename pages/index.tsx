@@ -126,6 +126,9 @@ const Home: NextPage = () => {
                 NextJS
               </span>
               <span className="bg-indigo-100 text-indigo-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-indigo-200 dark:text-indigo-900">
+                TailwindCSS
+              </span>
+              <span className="bg-indigo-100 text-indigo-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-indigo-200 dark:text-indigo-900">
                 Redux Toolkit
               </span>
             </div>
@@ -208,10 +211,13 @@ const Home: NextPage = () => {
                 Prisma
               </span>
               <span className="bg-indigo-100 text-indigo-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-indigo-200 dark:text-indigo-900">
-                TCRP
+                tRCP
               </span>
               <span className="bg-indigo-100 text-indigo-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-indigo-200 dark:text-indigo-900">
-                Prisma
+                MongoDB
+              </span>
+              <span className="bg-indigo-100 text-indigo-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-indigo-200 dark:text-indigo-900">
+                TailwindCSS
               </span>
             </div>
           </div>
