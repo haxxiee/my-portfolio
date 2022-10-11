@@ -120,50 +120,53 @@ const Home: NextPage = () => {
         liveUrl={Tickstem.liveUrl}
         githubUrl={Tickstem.githubUrl}
       />
-      <section className="min-h-screen w-full flex justify-center items-center">
-        <div className="flex items-center justify-center w-1/2 h-[30rem] bg-gradient-to-r from-violet-500 to-fuchsia-500 rounded-3xl ml-2">
-          <div className="w-[95%] h-[95%] bg-gray-800 rounded-3xl">
-            <code className="flex justify-start flex-col ml-4 mt-4 font-code text-gray-300">
-              <span className="mb-1">{"export const Linus: Person {"}</span>
-              <span className="">
-                &nbsp;&nbsp;&nbsp;{"name: 'Linus Foxell',"}
-              </span>
-              <span className="">
-                &nbsp;&nbsp;&nbsp;{"date: new Date('1995-10-29T03:24:00')"}
-              </span>
-              <span className="">
-                &nbsp;&nbsp;&nbsp;{"occupation: 'student'"}
-              </span>
-              <span className="">
-                &nbsp;&nbsp;&nbsp;{"residence: 'Uppsala, Sweden'"}
-              </span>
-              <span className="">
-                &nbsp;&nbsp;&nbsp;{"techStack: linusStack,"}
-              </span>
-              <span>{"}"}</span>
+      <section className="min-h-screen w-full flex flex-col justify-center items-center">
+        <h1 className="text-4xl font-semibold my-32">{"<About/>"}</h1>
+        <div className="w-full flex justify-center items-center">
+          <div className="flex items-center justify-center w-1/2 h-[30rem] dark:bg-gradient-to-r from-violet-500 to-fuchsia-500 rounded-3xl ml-2 ">
+            <div className="w-[95%] h-[95%] dark:bg-gray-800 rounded-3xl">
+              <code className="flex justify-start flex-col ml-4 mt-4 font-code text-gray-300">
+                <span className="mb-1">{"export const Linus: Person {"}</span>
+                <span className="">
+                  &nbsp;&nbsp;&nbsp;{"name: 'Linus Foxell',"}
+                </span>
+                <span className="">
+                  &nbsp;&nbsp;&nbsp;{"date: new Date('1995-10-29T03:24:00')"}
+                </span>
+                <span className="">
+                  &nbsp;&nbsp;&nbsp;{"occupation: 'student'"}
+                </span>
+                <span className="">
+                  &nbsp;&nbsp;&nbsp;{"residence: 'Uppsala, Sweden'"}
+                </span>
+                <span className="">
+                  &nbsp;&nbsp;&nbsp;{"techStack: linusStack,"}
+                </span>
+                <span>{"}"}</span>
 
-              <span className="mb-1 mt-4">
-                {"const linusStack: Array<tech> = ["}
-              </span>
-              <span className="">&nbsp;&nbsp;&nbsp;{"React,"}</span>
-              <span className="">&nbsp;&nbsp;&nbsp;{"TypeScript,"}</span>
-              <span className="">&nbsp;&nbsp;&nbsp;{"JavaScript,"}</span>
-              <span className="">&nbsp;&nbsp;&nbsp;{"TailwindCSS,"}</span>
-              <span className="">&nbsp;&nbsp;&nbsp;{"SASS,"}</span>
-              <span className="">&nbsp;&nbsp;&nbsp;{"NodeJS,"}</span>
-              <span className="">&nbsp;&nbsp;&nbsp;{"ExpressJS,"}</span>
-              <span>{"]"}</span>
-            </code>
+                <span className="mb-1 mt-4">
+                  {"const linusStack: Array<tech> = ["}
+                </span>
+                <span className="">&nbsp;&nbsp;&nbsp;{"React,"}</span>
+                <span className="">&nbsp;&nbsp;&nbsp;{"TypeScript,"}</span>
+                <span className="">&nbsp;&nbsp;&nbsp;{"JavaScript,"}</span>
+                <span className="">&nbsp;&nbsp;&nbsp;{"TailwindCSS,"}</span>
+                <span className="">&nbsp;&nbsp;&nbsp;{"SASS,"}</span>
+                <span className="">&nbsp;&nbsp;&nbsp;{"NodeJS,"}</span>
+                <span className="">&nbsp;&nbsp;&nbsp;{"ExpressJS,"}</span>
+                <span>{"]"}</span>
+              </code>
+            </div>
+            {/* Gör en border med gradiant och bakgrund inherrit när ligtmode + Rough notation*/}
           </div>
-          {/* Gör en border med gradiant och bakgrund inherrit när ligtmode + Rough notation*/}
-        </div>
 
-        <div className="flex flex-col justify-center items-center w-1/2">
-          <h2 className="text-3xl">Linus Foxell</h2>
-          <p>
-            Focusing on frontend, but willing to expand my knowledge and learn
-            more
-          </p>
+          <div className="flex flex-col justify-center items-center w-1/2">
+            <h2 className="text-3xl">Linus Foxell</h2>
+            <p>
+              Focusing on frontend, but willing to expand my knowledge and learn
+              more
+            </p>
+          </div>
         </div>
       </section>
     </div>
