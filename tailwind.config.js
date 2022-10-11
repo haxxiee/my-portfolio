@@ -6,6 +6,9 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    fontFamily: {
+      code: ["Source Code Pro", "monospace"],
+    },
     extend: {
       animation: {
         blob: "blob 12s infinite",
