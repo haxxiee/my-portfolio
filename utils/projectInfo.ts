@@ -12,9 +12,18 @@ export const InvenireGit: ProjectInfo = {
 
 export const Tickstem: ProjectInfo = {
   title: "Tickstem",
-  desctiption: "blablabla",
+  desctiption:
+    "A CRUD app made with NextJS. Made for learning purpose, learning a new stack with some interesting technologies",
   picUrl: "/assets/tickstemPic.png",
-  stack: ["React", "NextJS", "Prisma", "tRCP", "MongoDB", "TailwindCSS"],
+  stack: [
+    "React",
+    "NextJS",
+    "Prisma",
+    "tRCP",
+    "MongoDB",
+    "NextAuth",
+    "TailwindCSS",
+  ],
   liveUrl: "test",
   githubUrl: "test",
 };

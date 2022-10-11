@@ -34,14 +34,14 @@ const Home: NextPage = () => {
             initial={{ opacity: 0, x: -300 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{
-              delay: 0.2,
+              delay: 0.3,
               type: "spring",
               stiffness: 100,
             }}
           >
-            Frontend{" "}
+            Hi, I&apos;m{" "}
             <span className={`${theme === "dark" && "animate-test"}`}>
-              developer
+              Linus!
             </span>
           </motion.h1>
           <motion.div
@@ -49,7 +49,13 @@ const Home: NextPage = () => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.6, type: "spring", stiffness: 100 }}
           >
-            <h2 className="text-6xl font-semibold">Linus Foxell</h2>
+            <h2
+              className={`text-6xl font-semibold ${
+                theme === "dark" && "animate-test"
+              }`}
+            >
+              A Frontend developer
+            </h2>
             <p className="text-4xl mb-20">Student @ Changemaker Education</p>
           </motion.div>
 

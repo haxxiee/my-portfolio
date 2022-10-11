@@ -15,9 +15,9 @@ const Project: FC<ProjectInfo> = ({
   githubUrl,
 }) => {
   return (
-    <section className="min-h-screen flex flex-col md:flex-row justify-center items-center">
+    <section className="min-h-screen flex flex-col md:flex-row justify-center items-center text-center md:text-left">
       <motion.div
-        className="w-1/2 pl-4"
+        className="md:w-1/2 md:pl-4"
         initial={{ opacity: 0, x: -20 }}
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: true }}
@@ -29,7 +29,7 @@ const Project: FC<ProjectInfo> = ({
       >
         <h1 className="text-6xl font-bold my-2">{title}</h1>
         <p className="text-lg font-semibold my-2">{desctiption}</p>
-        <div className="flex gap-1 my-2">
+        <div className="flex justify-center md:justify-start items-center gap-1 my-2 flex-wrap">
           {stack.map((item) => (
             <span
               key={item}
@@ -39,7 +39,7 @@ const Project: FC<ProjectInfo> = ({
             </span>
           ))}
         </div>
-        <div className="flex gap-4 my-2 font-semibold">
+        <div className="flex gap-4 my-2 font-semibold md:justify-start justify-center items-center">
           <Link href={liveUrl} className="cursor-pointer">
             <motion.div
               className="flex justify-center items-center py-1 px-6 border-2 border-gray-400 rounded-xl cursor-pointer"
@@ -87,7 +87,7 @@ const Project: FC<ProjectInfo> = ({
         </div>
       </motion.div>
       <motion.div
-        className="w-1/2"
+        className="w-full md:w-2/3"
         initial={{ opacity: 0, x: 10 }}
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: true }}
