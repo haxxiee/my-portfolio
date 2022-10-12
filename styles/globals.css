@@ -14,8 +14,6 @@
   }
 }
 
-/* font-family: 'Source Code Pro', monospace; */
-
 html {
   @apply bg-blue-50;
   font-family: "Dosis", sans-serif;
