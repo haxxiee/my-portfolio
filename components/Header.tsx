@@ -4,8 +4,9 @@ import Link from "next/link";
 import { useTheme } from "next-themes";
 import { motion } from "framer-motion";
 import { githubMotion, navbarMotion } from "../utils/animations";
+import scrollToSection from "../utils/scrollToSection";
 
-const Header: FC = () => {
+const Header: FC<any> = ({ aboutSection }) => {
   const [mounted, setMounted] = useState(false);
   const { theme, setTheme } = useTheme();
   useEffect(() => setMounted(true), []);
@@ -25,11 +26,12 @@ const Header: FC = () => {
       </h1>
       <div className="flex justify-center items-center">
         <motion.h3
-          className="mx-3 font-bold"
+          className="mx-3 font-bold cursor-pointer"
           variants={navbarMotion}
           initial="rest"
           whileHover="hover"
           animate="rest"
+          onClick={() => scrollToSection(aboutSection)}
         >
           about
         </motion.h3>
