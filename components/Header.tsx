@@ -14,6 +14,8 @@ const Header: FC<any> = ({ aboutSection }) => {
     return null!;
   }
 
+  console.log(theme);
+
   return (
     <div className="absolute w-full flex justify-between items-center text-gray-800 dark:text-gray-200 py-5 z-20">
       <h1 className="text-4xl font-bold ml-4">
