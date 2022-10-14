@@ -2,12 +2,12 @@ import { FC } from "react";
 
 const Contact: FC = () => {
   return (
-    <div className="flex flex-col justify-center items-center text-gray-800 dark:text-gray-200 md:w-[30rem] md:m-auto mx-3">
+    <div className="flex flex-col justify-center items-center text-gray-800 dark:text-gray-200 md:w-[30rem] md:m-auto mx-3 ">
       <div className="flex items-center gap-2 mb-8 hover:text-purple-500 hover:dark:text-purple-400 transition-colors">
         <svg
           stroke="currentColor"
           fill="currentColor"
-          stroke-width="0"
+          strokeWidth="0"
           viewBox="0 0 512 512"
           height="14"
           width="14"
@@ -67,9 +67,9 @@ const Contact: FC = () => {
             <svg
               stroke="currentColor"
               fill="currentColor"
-              stroke-width="0"
+              strokeWidth="0"
               viewBox="0 0 512 512"
-              font-size="16"
+              fontSize="16"
               height="1em"
               width="1em"
               xmlns="http://www.w3.org/2000/svg"

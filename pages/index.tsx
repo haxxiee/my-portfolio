@@ -10,6 +10,7 @@ import Project from "../components/Project";
 import { InvenireGit, Tickstem } from "../utils/projectInfo";
 import CodeSection from "../components/CodeSection";
 import Contact from "../components/Contact";
+import Footer from "../components/Footer";
 
 const Home: NextPage = () => {
   const firstProject = useRef(null);
@@ -152,6 +153,7 @@ const Home: NextPage = () => {
         </section>
       </div>
       <Contact />
+      <Footer />
     </div>
   );
 };
