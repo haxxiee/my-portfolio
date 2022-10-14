@@ -24,6 +24,6 @@ export const Tickstem: ProjectInfo = {
     "NextAuth",
     "TailwindCSS",
   ],
-  liveUrl: "test",
-  githubUrl: "test",
+  liveUrl: "https://tickstem.vercel.app/",
+  githubUrl: "https://github.com/haxxiee/tickstem-v1",
 };
