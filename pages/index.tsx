@@ -26,7 +26,7 @@ const Home: NextPage = () => {
     <div>
       <div className="max-w-7xl m-auto text-gray-800 dark:text-gray-200 relative min-h-full overflow-hidden transition-all">
         <Head>
-          <title>Linus Portfolio</title>
+          <title>Linus Foxell - Portfolio</title>
           <meta name="description" content="Protfolio by Linus Foxell" />
           <link rel="icon" href="/favicon.ico" />
         </Head>
