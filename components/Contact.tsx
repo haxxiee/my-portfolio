@@ -9,10 +9,10 @@ const Contact: FC = () => {
 
     emailjs
       .sendForm(
-        process.env.EMAILJS_SERVICE_ID!,
-        process.env.EMAILJS_TEMPLATE_ID!,
+        process.env.NEXT_PUBLIC_SERVICE_ID!,
+        process.env.NEXT_PUBLIC_TEMPLATE_ID!,
         form.current,
-        process.env.EMAILJS_PUBLIC_KEY
+        process.env.NEXT_PUBLIC_PUBLIC_KEY
       )
       .then(
         (result) => {
