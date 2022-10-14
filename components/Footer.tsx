@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 const Footer: FC = () => {
   return (
-    <div className="flex flex-col gap-4 items-center justify-center h-60 mt-32">
+    <div className="flex flex-col gap-4 items-center justify-center h-60 mt-32 text-gray-800 dark:text-gray-200">
       <div className="flex">
         <Link href={"https://github.com/haxxiee"}>
           <a target={"_blank"}>

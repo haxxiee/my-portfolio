@@ -91,21 +91,7 @@ const Home: NextPage = () => {
             </svg>
           </motion.button>
         </main>
-        <div
-          className={`absolute top-64 left-8 w-96 h-96 bg-purple-300 rounded-full mix-blend-multiply filter blur-xl animate-blob opacity-70 animate-test2 ${
-            theme === "dark" && "opacity-0"
-          }`}
-        />
-        <div
-          className={`absolute top-64 left-80 w-96 h-96 bg-yellow-300 rounded-full mix-blend-multiply filter blur-xl animate-blob animation-delay-2000 opacity-70 ${
-            theme === "dark" && "opacity-0"
-          }`}
-        />
-        <div
-          className={`absolute top-96 left-40 w-96 h-96 bg-pink-300 rounded-full mix-blend-multiply filter blur-xl animate-blob animation-delay-4000 opacity-70 ${
-            theme === "dark" && "opacity-0"
-          }`}
-        />
+
         <div ref={firstProject}>
           <Project
             title={InvenireGit.title}
@@ -151,6 +137,23 @@ const Home: NextPage = () => {
             </div>
           </div>
         </section>
+
+        {/* Background blobs */}
+        <div
+          className={`absolute top-64 left-8 w-96 h-96 bg-purple-300 rounded-full mix-blend-multiply filter blur-xl animate-blob opacity-70 animate-test2 ${
+            theme === "dark" && "opacity-0"
+          }`}
+        />
+        <div
+          className={`absolute top-64 left-80 w-96 h-96 bg-yellow-300 rounded-full mix-blend-multiply filter blur-xl animate-blob animation-delay-2000 opacity-70 ${
+            theme === "dark" && "opacity-0"
+          }`}
+        />
+        <div
+          className={`absolute top-96 left-40 w-96 h-96 bg-pink-300 rounded-full mix-blend-multiply filter blur-xl animate-blob animation-delay-4000 opacity-70 ${
+            theme === "dark" && "opacity-0"
+          }`}
+        />
       </div>
       <Contact />
       <Footer />
