@@ -9,6 +9,7 @@ import scrollToSection from "../utils/scrollToSection";
 import Project from "../components/Project";
 import { InvenireGit, Tickstem } from "../utils/projectInfo";
 import CodeSection from "../components/CodeSection";
+import Contact from "../components/Contact";
 
 const Home: NextPage = () => {
   const firstProject = useRef(null);
@@ -124,10 +125,12 @@ const Home: NextPage = () => {
           githubUrl={Tickstem.githubUrl}
         />
         <section
-          className="min-h-screen w-full flex flex-col justify-center items-center"
+          className="min-h-screen w-full flex flex-col justify-center items-center relative"
           ref={aboutSection}
         >
-          <h1 className="text-4xl font-semibold my-32">{"<About/>"}</h1>
+          <h1 className="text-4xl font-semibold absolute top-10">
+            {"<About/>"}
+          </h1>
           <div className="w-full flex justify-center items-center">
             <div className="flex items-center justify-center w-1/2 h-[30rem] bg-gradient-to-r from-violet-500 to-fuchsia-500 rounded-3xl ml-2 ">
               <CodeSection />
@@ -136,7 +139,7 @@ const Home: NextPage = () => {
             <div className="flex flex-col justify-center items-center w-1/2">
               <div className="flex flex-col justify-start w-[90%] text-left">
                 <h2 className="text-4xl mb-4 font-bold">Linus Foxell</h2>
-                <p className="text-lg font-semibold">
+                <p className="text-lg">
                   I am a competitive person with a great sense of humor that is
                   interested in anything that has to do with sports, gaming and
                   new tech. Frontend is what I&apos;m focusing on but I am
@@ -148,7 +151,7 @@ const Home: NextPage = () => {
           </div>
         </section>
       </div>
-      <div className="h-60 w-full bg-gray-700"></div>
+      <Contact />
     </div>
   );
 };
