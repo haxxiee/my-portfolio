@@ -25,7 +25,7 @@ const Contact: FC = () => {
             Full Name
           </label>
           <input
-            className="text-base bg-transparent border-2 border-slate-300 dark:border-slate-700 px-5 py-3 rounded focus:outline-none focus:border-slate-700 dark:focus:border-slate-300"
+            className="text-base font-semibold bg-transparent border-2 border-slate-700 dark:border-slate-700 px-5 py-3 rounded focus:outline-none focus:border-slate-800 dark:focus:border-slate-300"
             id="fullName"
             type="text"
             placeholder="John Doe"
@@ -37,7 +37,7 @@ const Contact: FC = () => {
             Email Address
           </label>
           <input
-            className="text-base bg-transparent border-2 border-slate-300 dark:border-slate-700 px-5 py-3 rounded focus:outline-none focus:border-slate-700 dark:focus:border-slate-300"
+            className="text-base font-semibold bg-transparent border-2 border-slate-700 dark:border-slate-700 px-5 py-3 rounded focus:outline-none focus:border-slate-800 dark:focus:border-slate-300"
             id="email"
             type="email"
             placeholder="john.doe@example.com"
@@ -51,7 +51,7 @@ const Contact: FC = () => {
             Message
           </label>
           <textarea
-            className="text-base bg-transparent border-2 border-slate-300 dark:border-slate-700 px-5 py-3 rounded focus:outline-none focus:border-slate-700 dark:focus:border-slate-300"
+            className="text-base font-semibold bg-transparent border-2 border-slate-700 dark:border-slate-700 px-5 py-3 rounded focus:outline-none focus:border-slate-800 dark:focus:border-slate-300"
             id="message"
             rows={4}
             placeholder="Type your message here"
